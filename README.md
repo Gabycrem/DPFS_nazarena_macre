@@ -93,4 +93,47 @@ Referente por:
 
 - Presentación visual inspiradora  
 - Enfoque lifestyle  
-- Diseño emocional  
+- Diseño emocional
+
+## 🚀 Estado del Proyecto
+
+### 🟢 Sprint 1 – Wireframes Completos
+
+El Sprint 1 se encuentra finalizado e incluye la arquitectura completa del e-commerce mediante wireframes en baja fidelidad (sin estética visual, enfocados en estructura y funcionalidad).
+
+Se desarrollaron los siguientes bocetos:
+
+- 🏠 Home  
+- 🛍️ Listado de productos (Shop)  
+- 📄 Detalle de producto  
+- 🛒 Carrito de compras  
+- 👤 Registro de usuario  
+- 🔐 Login  
+- ⚙️ Estructura de Header + Hero  
+- 📦 Organización de categorías  
+
+Los wireframes fueron diseñados priorizando:
+
+- Jerarquía visual clara  
+- Correcta distribución de secciones  
+- Navegación intuitiva  
+- Enfoque en experiencia de usuario  
+
+Este sprint tuvo como objetivo validar la arquitectura antes de avanzar a la etapa visual y de desarrollo.
+
+---
+## Créditos
+
+Documentación mantenida por:
+
+**Gabycrem®**  
+Desarrollo, organización y dirección del proyecto AUMA.
+
+- GitHub: [Gabycrem](https://github.com/Gabycrem)  
+- LinkedIn: [Nazarena Macre](https://www.linkedin.com/in/macrenazarena/)  
+
+---
+
+<div align="center">
+<code>Siempre construyendo, siempre aprendiendo. -- GABYCREM® </code>
+</div>
