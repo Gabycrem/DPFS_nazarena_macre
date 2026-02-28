@@ -1,0 +1,138 @@
+:root {
+  /* =========================
+           BACKGROUNDS
+     ========================= */
+
+  --color-bg-primary: #E7E1DC;       /* Crema cálido base */
+  --color-bg-secondary: #F5EFE9;     /* Fondo alternativo */
+  --color-surface: #FAF7F4;          /* Superficie cards (no blanco puro) */
+
+  /* =========================
+          ACCENTS
+     ========================= */
+
+  --color-accent-primary: #C4816B;   /* Terracota suave */
+  --color-accent-hover: #B4725E;     /* Hover 10% más oscuro */
+  --color-accent-secondary: #D9A59A; /* Nude rosado */
+
+  /* =========================
+          TEXT COLORS 
+     ========================= */
+
+  --color-text-primary: #1C1A18;     /* Negro cálido profundo */
+  --color-text-secondary: #4E4A46;   /* Gris cálido */
+  --color-text-muted: #7A746E;       /* Texto suave */
+
+  /* =========================
+     📦 UI DETAILS
+     ========================= */
+
+  --color-border-light: #E3DDD7;     /* Bordes sutiles */
+  --color-shadow: rgba(28, 26, 24, 0.06);
+  --input-bg: #F3ECE6;
+  --icon-primary: var(--color-text-primary);
+
+  /* =========================
+     🔘 BUTTONS
+     ========================= */
+
+  --btn-primary-bg: var(--color-accent-primary);
+  --btn-primary-text: #FAF7F4;
+
+  --btn-secondary-bg: transparent;
+  --btn-secondary-border: var(--color-text-primary);
+  --btn-secondary-text: var(--color-text-primary);
+
+  /* =========================
+     📦 CARDS
+     ========================= */
+
+  --card-bg: var(--color-surface);
+  --card-shadow: 0 6px 18px var(--color-shadow);
+  --card-border-radius: 14px;
+
+  /* =========================
+     ✨ TRANSITIONS
+     ========================= */
+
+  --transition-default: all 0.3s ease;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+
+    padding:0 5%;
+}
+
+.header, .hero, .footer{
+    background-color: var(--color-bg-primary);
+}
+
+.header-sup{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-logo{
+    height: 100px;
+}
+
+.input-search{
+    border: 1px solid transparent;
+    border-radius: 25px;
+    width: 350px;
+    height: 2rem;
+    background-color: var(--input-bg);
+    padding-left: 1rem;
+    align-self: center;
+}
+
+.header-icons{
+    display: flex;;
+    cursor: pointer;
+    gap: 15px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.header-inf{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-content: center;
+    height: 2rem;
+}
+
+.header-inf nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.header-inf nav a{
+    text-decoration: none;
+}
+
+.section{
+    height: 500px;
+}
+
+.footer{
+    height: 350px;
+}
