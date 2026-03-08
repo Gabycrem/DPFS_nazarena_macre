@@ -157,6 +157,29 @@ El tablero se encuentra organizado en las siguientes columnas:
 - **Done** → tareas completadas y validadas  
 
 Este flujo permite mantener una organización clara del trabajo durante el sprint y visualizar fácilmente el progreso de cada tarea.
+
+### 📁 Organización de Vistas
+
+Durante el desarrollo del **Sprint 2** se decidió reorganizar la estructura de las vistas para mejorar la organización del proyecto.
+
+Se creó la carpeta:
+
+`views/products`
+
+Dentro de ella se agrupan las páginas correspondientes a cada categoría del e-commerce:
+
+- `productsVelas.html`
+- `productsDifusores.html`
+- `productsAromat.html`
+- `productsKits.html`
+
+Esta decisión permite mantener una **estructura más clara y escalable**, separando las páginas de categorías del resto de las vistas principales como:
+
+- `index.html`
+- `productDetail.html`
+- `productCart.html`
+- `login.html`
+- `register.html`
 ---
 ## Créditos
 

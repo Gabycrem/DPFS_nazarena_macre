@@ -119,6 +119,7 @@ body{
     width: 100%;
     align-content: center;
     height: 2rem;
+    padding-bottom: 1rem;
 }
 
 .header-inf nav{
