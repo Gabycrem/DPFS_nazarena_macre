@@ -121,6 +121,42 @@ Los wireframes fueron diseñados priorizando:
 
 Este sprint tuvo como objetivo validar la arquitectura antes de avanzar a la etapa visual y de desarrollo.
 
+### 🟢 Sprint 2 – Diseño Visual y Maquetación (En proceso)
+
+El **Sprint 2 se encuentra actualmente en desarrollo**.
+
+En esta etapa se está trabajando en la transición desde los wireframes hacia el diseño visual y la estructura base del sitio.
+
+Las tareas principales incluyen:
+
+- Definición de **identidad visual inicial**
+- Selección de **tipografías y paleta de colores**
+- Maquetación de las primeras vistas del sitio
+- Organización de la **estructura HTML**
+- Implementación inicial de **estilos CSS**
+- Ajustes de **experiencia de usuario** basados en los wireframes
+
+Este sprint busca comenzar a transformar la estructura conceptual del proyecto en una **interfaz visual funcional**.
+
+---
+
+## 📋 Gestión del Sprint
+
+La organización del **Sprint 2** se gestiona mediante **Trello**, utilizando un tablero de trabajo que permite visualizar el estado de cada tarea dentro del flujo de desarrollo.
+
+### Tablero del Sprint 2
+
+👉 [Tablero de Trello – Sprint 2 Desafío Profesional DH](https://trello.com/b/YPibbU78/sprint2-desafio-profesional-dh)
+
+El tablero se encuentra organizado en las siguientes columnas:
+
+- **Backlog** → tareas pendientes de planificación o desarrollo  
+- **To Do** → tareas listas para comenzar  
+- **Doing** → tareas actualmente en desarrollo  
+- **Review** → tareas finalizadas que requieren revisión o pruebas  
+- **Done** → tareas completadas y validadas  
+
+Este flujo permite mantener una organización clara del trabajo durante el sprint y visualizar fácilmente el progreso de cada tarea.
 ---
 ## Créditos
 
