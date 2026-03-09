@@ -100,9 +100,54 @@ body{
 }
 
 .header-icons{
-    display: flex;;
+    display: flex;
     cursor: pointer;
     gap: 15px;
+}
+
+.icon-button{
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+
+.arrow{
+    transition: transform 0.3s ease;
+}
+
+.account-menu:hover .arrow{
+    transform: rotate(180deg);
+}
+
+.dropdown-menu{
+    position:absolute;
+    top:25px;
+    right:-30px;
+    background:var(--color-surface);
+    border:1px solid var(--color-accent-hover);
+    border-radius: 5px;
+    display:none;
+    flex-direction:column;
+    min-width:150px;
+}
+
+.account-menu{
+    position:relative;
+}
+
+.dropdown-menu a{
+    padding:10px;
+    text-decoration:none;
+    color: var(--color-text-secondary);
+
+}
+
+.dropdown-menu a:hover{
+    background:var(--color-bg-primary);
+}
+
+.account-menu:hover .dropdown-menu{
+    display:flex;
 }
 
 .material-symbols-outlined {

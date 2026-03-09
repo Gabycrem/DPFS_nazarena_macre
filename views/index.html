@@ -21,12 +21,27 @@
             <img class="header-logo" src="../design/logoCuadr_SinFondop.png" alt="Logo">
             <input type="text" class="input-search" placeholder="¿Qué estás buscando?">
             <div class="header-icons">
-                <span class="material-symbols-outlined">
-                    person
-                </span>
-                <span class="material-symbols-outlined">
-                    shopping_cart
-                </span>
+                <div class="account-menu">
+                    <button class="icon-button">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                        <span class="material-symbols-outlined arrow">
+                            expand_more
+                        </span>
+                    </button>
+
+                    <div class="dropdown-menu">
+                        <a href="/views/login.html">Iniciar sesión</a>
+                        <a href="/views/register.html">Crear cuenta</a>
+                    </div>
+                </div>
+
+                <a href="/views/productCart.html" class="icon-link">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                </a>
             </div>
         </div>
         <div class="header-inf">
@@ -295,10 +310,10 @@
                 <a href="#"><span class="material-symbols-outlined">call</span>
                     +54 9 11 0000 0000</a>
                 <a href="#"><span class="material-symbols-outlined">location_on</span>
-            Tierra del Fuego AeIAS, Argentina</a>
+                    Tierra del Fuego AeIAS, Argentina</a>
                 <a href="#"><span class="material-symbols-outlined">support_agent</span>Soporte</a>
                 <a href="#"><span class="material-symbols-outlined">help</span>
-            Preguntas Frecuentes</a>
+                    Preguntas Frecuentes</a>
             </nav>
 
             <nav class="col">

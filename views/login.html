@@ -21,23 +21,38 @@
             <img class="header-logo" src="../design/logoCuadr_SinFondop.png" alt="Logo">
             <input type="text" class="input-search" placeholder="¿Qué estás buscando?">
             <div class="header-icons">
-                <span class="material-symbols-outlined">
-                    person
-                </span>
-                <span class="material-symbols-outlined">
-                    shopping_cart
-                </span>
+                <div class="account-menu">
+                    <button class="icon-button">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                        <span class="material-symbols-outlined arrow">
+                            expand_more
+                        </span>
+                    </button>
+
+                    <div class="dropdown-menu">
+                        <a href="/views/login.html">Iniciar sesión</a>
+                        <a href="/views/register.html">Crear cuenta</a>
+                    </div>
+                </div>
+
+                <a href="/views/productCart.html" class="icon-link">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                </a>
             </div>
         </div>
         <div class="header-inf">
             <nav class="header-nav  nav">
-                <a class="active" href="#">Home</a>
-                <a href="">Velas</a>
-                <a href="">Aromatizantes</a>
-                <a href="">Difusores</a>
-                <a href="">Kits</a>
-                <a href="">Sobre Nosotros</a>
-                <a href="">Contacto</a>
+                <a href="./index.html">Home</a>
+                <a href="./products/productsVelas.html">Velas</a>
+                <a href="./products/productsAromat.html">Aromatizantes</a>
+                <a href="./products/productsDifusores.html">Difusores</a>
+                <a href="./products/productsKits.html">Kits</a>
+                <a href="#">Sobre Nosotros</a>
+                <a href="#">Contacto</a>
             </nav>
         </div>
     </header>
