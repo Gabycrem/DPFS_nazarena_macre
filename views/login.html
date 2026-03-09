@@ -57,9 +57,34 @@
         </div>
     </header>
     <main>
-        <div class="section">
-            <h1>LOGIN</h1>
-        </div>
+        <section class="section login">
+            <article class="form-login">
+                <div class="title">
+                    <h1>Iniciá Sesión</h1>
+                    <p>No tenes una cuenta, <span><a href="./register.html">crea una nueva.</a></span></p>
+                </div>
+                <form action="./index.html">
+                    <div class="email-grp">
+                        <label for="email">Ingrese su Email</label>
+                        <input class="input-login email" type="email" name="email" id="email"
+                            placeholder="persona@gmail.com" autocomplete="email" required>
+                    </div>
+                    <div class="pass-grp">
+                        <label for="password">Ingrese su contraseña</label>
+                        <input class="input-login password" type="password" name="password" id="password"
+                            placeholder="**********" autocomplete="current-password" required>
+                        <div class="btn-mostrar">
+                            <span class="material-symbols-outlined">visibility_off</span>
+                        </div>
+                    </div>
+                    <button class="btn" type="submit">INICIAR SESIÓN</button>
+                    <a href="#" class="forget-pass">Olvidé mi contraseña</a>
+                </form>
+            </article>
+            <article class="img-login">
+                <img src="../design/LogoAumaColor.png" alt="Logo Auma">
+            </article>
+        </section>
     </main>
 
     <footer class="footer">
@@ -102,10 +127,10 @@
                 <a href="#"><span class="material-symbols-outlined">call</span>
                     +54 9 11 0000 0000</a>
                 <a href="#"><span class="material-symbols-outlined">location_on</span>
-            Tierra del Fuego AeIAS, Argentina</a>
+                    Tierra del Fuego AeIAS, Argentina</a>
                 <a href="#"><span class="material-symbols-outlined">support_agent</span>Soporte</a>
                 <a href="#"><span class="material-symbols-outlined">help</span>
-            Preguntas Frecuentes</a>
+                    Preguntas Frecuentes</a>
             </nav>
 
             <nav class="col">
