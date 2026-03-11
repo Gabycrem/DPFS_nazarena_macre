@@ -1,0 +1,99 @@
+.section.login {
+    display: flex;
+    flex-direction: row;
+}
+
+.section.login article {
+    width: 50%;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    gap: 1.5rem;
+}
+
+.title span {
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+.title span a {
+    color: var(--color-text-primary);
+}
+
+.title span a:hover {
+    color: var(--color-text-secondary);
+}
+
+.form-login form,
+.email-grp,
+.pass-grp {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-login form {
+    gap: 2rem;
+}
+
+.pass-grp {
+    position: relative;
+}
+
+.password {
+    padding-left: 40px;
+}
+
+.btn-mostrar {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+}
+
+.btn-mostrar:hover {
+    color: var(--color-text-primary);
+}
+
+.input-login,
+.btn {
+    height: 50px;
+    border-radius: 15px;
+    padding-left: 1rem;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.forget-pass {
+    text-align: center;
+    color: var(--color-text-primary);
+}
+
+.forget-pass:hover {
+    color: var(--color-text-secondary);
+}
+
+.img-login {
+    align-self: center;
+}
+
+.img-login img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .section.login article{
+        width: 100%;
+    }
+    .img-login{
+        display: none;
+    }
+}

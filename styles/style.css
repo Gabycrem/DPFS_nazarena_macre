@@ -1,83 +1,98 @@
 :root {
-  /* =========================
+    /* =========================
            BACKGROUNDS
      ========================= */
 
-  --color-bg-primary: #E7E1DC;       /* Crema cálido base */
-  --color-bg-secondary: #F5EFE9;     /* Fondo alternativo */
-  --color-surface: #FAF7F4;          /* Superficie cards (no blanco puro) */
+    --color-bg-primary: #E7E1DC;
+    /* Crema cálido base */
+    --color-bg-secondary: #F5EFE9;
+    /* Fondo alternativo */
+    --color-surface: #FAF7F4;
+    /* Superficie cards (no blanco puro) */
 
-  /* =========================
+    /* =========================
           ACCENTS
      ========================= */
 
-  --color-accent-primary: #C4816B;   /* Terracota suave */
-  --color-accent-hover: #B4725E;     /* Hover 10% más oscuro */
-  --color-accent-secondary: #D9A59A; /* Nude rosado */
+    --color-accent-primary: #C4816B;
+    /* Terracota suave */
+    --color-accent-hover: #B4725E;
+    /* Hover 10% más oscuro */
+    --color-accent-secondary: #D9A59A;
+    /* Nude rosado */
 
-  /* =========================
+    /* =========================
           TEXT COLORS 
      ========================= */
 
-  --color-text-primary: #1C1A18;     /* Negro cálido profundo */
-  --color-text-secondary: #4E4A46;   /* Gris cálido */
-  --color-text-muted: #7A746E;       /* Texto suave */
+    --color-text-primary: #1C1A18;
+    /* Negro cálido profundo */
+    --color-text-secondary: #4E4A46;
+    /* Gris cálido */
+    --color-text-muted: #7A746E;
+    /* Texto suave */
 
-  /* =========================
+    /* =========================
      📦 UI DETAILS
      ========================= */
 
-  --color-border-light: #E3DDD7;     /* Bordes sutiles */
-  --color-shadow: rgba(28, 26, 24, 0.06);
-  --input-bg: #F3ECE6;
-  --icon-primary: var(--color-text-primary);
+    --color-border-light: #E3DDD7;
+    /* Bordes sutiles */
+    --color-shadow: rgba(28, 26, 24, 0.06);
+    --input-bg: #F3ECE6;
+    --icon-primary: var(--color-text-primary);
 
-  /* =========================
+    /* =========================
      🔘 BUTTONS
      ========================= */
 
-  --btn-primary-bg: var(--color-accent-primary);
-  --btn-primary-text: #FAF7F4;
+    --btn-primary-bg: var(--color-accent-primary);
+    --btn-primary-text: #FAF7F4;
 
-  --btn-secondary-bg: transparent;
-  --btn-secondary-border: var(--color-text-primary);
-  --btn-secondary-text: var(--color-text-primary);
+    --btn-secondary-bg: transparent;
+    --btn-secondary-border: var(--color-text-primary);
+    --btn-secondary-text: var(--color-text-primary);
 
-  /* =========================
+    /* =========================
      📦 CARDS
      ========================= */
 
-  --card-bg: var(--color-surface);
-  --card-shadow: 0 6px 18px var(--color-shadow);
-  --card-border-radius: 14px;
+    --card-bg: var(--color-surface);
+    --card-shadow: 0 6px 18px var(--color-shadow);
+    --card-border-radius: 14px;
 
-  /* =========================
+    /* =========================
      ✨ TRANSITIONS
      ========================= */
 
-  --transition-default: all 0.3s ease;
+    --transition-default: all 0.3s ease;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Oxygen', sans-serif;
 }
-.header{
+
+.header {
     display: flex;
     flex-direction: column;
 
-    padding:0 10%;
+    padding: 0 10%;
 }
 
-.header, .hero, .footer, .categoria{
+.header,
+.hero,
+.footer,
+.categoria {
     background-color: var(--color-bg-primary);
 }
 
-.header-sup{
+.header-sup {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -85,11 +100,12 @@ body{
     justify-content: space-between;
 }
 
-.header-logo{
+.header-logo {
     height: 100px;
 }
 
-.input-search, .input-suscripcion{
+.input-search,
+.input-suscripcion {
     border: 1px solid transparent;
     border-radius: 25px;
     width: 350px;
@@ -99,66 +115,66 @@ body{
     align-self: center;
 }
 
-.header-icons{
+.header-icons {
     display: flex;
     cursor: pointer;
     gap: 15px;
 }
 
-.icon-button{
-    background:none;
-    border:none;
-    cursor:pointer;
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.arrow{
+.arrow {
     transition: transform 0.3s ease;
 }
 
-.account-menu:hover .arrow{
+.account-menu:hover .arrow {
     transform: rotate(180deg);
 }
 
-.dropdown-menu{
-    position:absolute;
-    top:25px;
-    right:-30px;
-    background:var(--color-surface);
-    border:1px solid var(--color-accent-hover);
+.dropdown-menu {
+    position: absolute;
+    top: 25px;
+    right: -30px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-accent-hover);
     border-radius: 5px;
-    display:none;
-    flex-direction:column;
-    min-width:150px;
+    display: none;
+    flex-direction: column;
+    min-width: 150px;
 }
 
-.account-menu{
-    position:relative;
+.account-menu {
+    position: relative;
 }
 
-.dropdown-menu a{
-    padding:10px;
-    text-decoration:none;
+.dropdown-menu a {
+    padding: 10px;
+    text-decoration: none;
     color: var(--color-text-secondary);
 
 }
 
-.dropdown-menu a:hover{
-    background:var(--color-bg-primary);
+.dropdown-menu a:hover {
+    background: var(--color-bg-primary);
 }
 
-.account-menu:hover .dropdown-menu{
-    display:flex;
+.account-menu:hover .dropdown-menu {
+    display: flex;
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
-.header-inf{
+.header-inf {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -167,46 +183,47 @@ body{
     padding-bottom: 1rem;
 }
 
-.header-inf nav{
+.header-inf nav {
     display: flex;
     justify-content: space-between;
     width: 90%;
     align-items: end;
 }
 
-.header-inf nav a{
+.header-inf nav a {
     text-decoration: none;
     color: var(--color-text-primary);
     transition: all .3s ease;
 }
 
-.header-inf nav a:hover{
+.header-inf nav a:hover {
     border-bottom: solid 1px var(--color-accent-hover);
     color: var(--color-accent-hover);
 }
 
-.header-inf nav .active{
+.header-inf nav .active {
     border-bottom: solid 1px var(--color-accent-hover);
     color: var(--color-accent-hover);
 }
 
 /* ------------ MAIN --------------------------*/
 
-.section{
+.section {
     min-height: 500px;
-    padding:5% 10%;
+    padding: 5% 10%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 
 }
 
-.section.hero{
+.section.hero {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.hero-content{
+
+.hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,43 +232,48 @@ body{
     width: 60%;
 }
 
-.section.hero h1{
+.section.hero h1 {
     font-size: 45px;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-weight: 700px;
 }
 
 
-h2{
+h2 {
     font-size: 36px;
 }
 
-p{
+p {
     font-weight: 400px;
 }
 
 /* ---------- DESTACADOS --------------*/
-.destac-header{
+.destac-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.destac-header p{
+
+.destac-header p {
     max-width: 500px;
     height: 50px;
     align-content: center;
 
 }
 
-.destac-grid, .categoria-grid, .populares-grid{
+.destac-grid,
+.categoria-grid,
+.populares-grid {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:24px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
 }
 
-.product-img{
+.product-img {
     position: relative;
     border: solid 1px transparent;
     background-color: var(--color-accent-hover);
@@ -260,7 +282,7 @@ p{
     overflow: hidden;
 }
 
-.product-img img{
+.product-img img {
     width: 100%;
     height: 100%;
     border-radius: 14px;
@@ -268,32 +290,32 @@ p{
     transition: all .3s ease;
 }
 
-.product-img::after{
+.product-img::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.3); 
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 14px;
 }
 
-.old-price{
+.old-price {
     font-weight: lighter;
-    color: var(--color-text-muted); 
+    color: var(--color-text-muted);
     text-decoration: line-through;
 }
 
-.new-price{
-    font-weight:bold;
+.new-price {
+    font-weight: bold;
 }
 
-.producto-info{
+.producto-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
 }
 
-.add-cart{
+.add-cart {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
@@ -301,22 +323,23 @@ p{
 
 /* ---------------- CATEGORIAS ------------------*/
 
-.vela{
+.vela {
     grid-area: vela;
 }
 
-.aromat{
+.aromat {
     grid-area: aromat;
 }
 
-.kits{
+.kits {
     grid-area: kits;
 }
 
-.difusor{
+.difusor {
     grid-area: difusor;
 }
-.categoria-grid{
+
+.categoria-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
@@ -324,7 +347,7 @@ p{
         "vela kits difusor";
 }
 
-.categoria-card{
+.categoria-card {
     border: solid 1px transparent;
     background-color: var(--color-surface);
     min-height: 180px;
@@ -334,14 +357,14 @@ p{
     overflow: hidden;
 }
 
-.categoria-card::after{
+.categoria-card::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.35);
+    background: rgba(0, 0, 0, 0.35);
 }
 
-.categoria-card span{
+.categoria-card span {
     display: block;
     padding: 1rem;
     position: absolute;
@@ -351,25 +374,26 @@ p{
     color: var(--btn-primary-text);
 }
 
-.categoria-card img{
+.categoria-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
 }
+
 /* ----------------- FOOTER --------------------------*/
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.footer-logo{
+.footer-logo {
     width: 150px;
 }
 
-.footer-sup{
+.footer-sup {
     display: flex;
     width: 90%;
     justify-content: space-around;
@@ -377,17 +401,17 @@ p{
     padding-bottom: 1rem;
 }
 
-.footer h2{
-        font-size: 2.5rem;
+.footer h2 {
+    font-size: 2.5rem;
 }
 
-.btn-enviar{
+.btn-enviar {
     position: relative;
     right: -320px;
     top: -33px;
-   /* transform: translateY(-50%);*/
+    /* transform: translateY(-50%);*/
     border: none;
-    background-color: var(--color-accent); 
+    background-color: var(--color-accent);
     border-radius: 50%;
     width: 35px;
     height: 35px;
@@ -397,12 +421,12 @@ p{
     cursor: pointer;
 }
 
-.footer-sup .col h3{
+.footer-sup .col h3 {
     font-size: 1rem;
     padding-bottom: 1rem;
 }
 
-.footer-sup .col a{
+.footer-sup .col a {
     display: flex;
     text-decoration: none;
     color: inherit;
@@ -411,101 +435,142 @@ p{
     gap: 8px;
 }
 
-.col a:hover{
+.col a:hover {
     opacity: 1;
 }
 
-.footer p{
+.footer p {
     padding: 1rem 0;
     border-top: 1px solid var(--color-text-primary);
     width: 100%;
     text-align: center;
 }
 
-/* ---------------- LOGIN ---------------------*/
-.section.login{
-    display: flex;
-    flex-direction: row;
-}
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
 
-.section.login article{
-    width: 50%;
-}
+@media (max-width: 768px) {
 
-.form-login{
-    display: flex;
-    flex-direction: column;
-    padding: 5%;
-    gap: 1.5rem;
-}
+    .section {
+        padding: 40px 20px;
+        min-height: auto;
+    }
 
-.title span{
-    font-weight: bold;
-    text-decoration: underline;
+    .header-sup {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 
-}
+    .header-logo{
+        order: 1;
+    }
 
-.title span a{
-    color: var(--color-text-primary);
-}
+    .input-search {
+        order: 3;
+        width: 100%;
+    }
 
-.title span a:hover{
-    color: var(--color-text-secondary);
-}
+    .header-icons {
+        gap: 20px;
+        order: 2;
+    }
 
-.form-login form, .email-grp, .pass-grp{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
+    .header-inf {
+        height: auto;
+    }
 
-.form-login form{
-    gap: 2rem;
-}
+    .header-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
 
-.pass-grp{
-    position: relative;
-}
+    .header-nav a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
 
-.password{
-    padding-left: 40px;
-}
 
-.btn-mostrar{
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    cursor: pointer;
-    color: var(--color-text-secondary);
-}
+    .hero {
+        padding: 40px 20px;
+        text-align: center;
+    }
 
-.btn-mostrar:hover{
-    color: var(--color-text-primary);
-}
+    .hero-content {
+        width: 90%;
+    }
 
-.input-login, .btn{
-    height: 50px;
-    border-radius: 15px;
-    padding-left: 1rem;
-}
+    .section.hero h1 {
+        font-size: 28px;
+    }
 
-.btn{
-    cursor: pointer;
-}
+    .hero p {
+        font-size: 16px;
+    }
 
-.forget-pass{
-    text-align: center;
-    color: var(--color-text-primary);
-}
+    h2 {
+        font-size: 20px;
+    }
 
-.forget-pass:hover{
-    color: var(--color-text-secondary);
-}
+    p {
+        font-size: 0.8rem;
+    }
 
-.img-login{
-    align-self: center;
-}
+    .destac-grid,
+    .populares-grid,
+    .categoria-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
 
-.img-login img{
-    width: 100%;
+    .destac-header,
+    .populares-header div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .product-img {
+        max-height: 150px;
+    }
+
+    .categoria-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "vela vela"
+            "aromat kits"
+            "difusor difusor";
+    }
+
+    .categoria-card {
+        max-height: 178px;
+    }
+
+    .categoria-card span {
+        font-size: 1rem;
+    }
+
+    .footer h2 {
+        font-size: 1.2rem;
+        text-align: center;
+ 
+    }
+
+    .footer-sup {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+    }
+
+    .footer .col {
+        text-align: center;
+    }
 }
